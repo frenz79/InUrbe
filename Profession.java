@@ -1,4 +1,4 @@
-public static enum Profession {
+public enum Profession {
   STUDENT,
   WORKER,
   RETIRED
