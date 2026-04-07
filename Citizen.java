@@ -1,5 +1,6 @@
 public class Citizen {
-  private sttatic final AtomicLong idGen = new AtomicLong(0l);
+  private static final AtomicLong idGen = new AtomicLong(0l);
+  
   static enum Gender {
     M,F
   }
