@@ -27,7 +27,11 @@ public class Citizen {
   }
 
   public Activity whatIsDoing(LocalDateTime now){
-    
+      if (profession!=null) {
+          if ( now.isIn( profession.getPeriod() ) ){
+              return Activity.WORKING;
+          }
+      }
   }
 
   
