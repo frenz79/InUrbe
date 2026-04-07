@@ -1,7 +1,8 @@
 public record Profession(
   LocalDate startDate,
   Period dailyPeriod,
-  Location location
+  Location location,
+  ProfessionEnum type
 ){
   
 }
