@@ -1,10 +1,6 @@
 public class Citizen {
   private static final AtomicLong idGen = new AtomicLong(0l);
-  
-  static enum Gender {
-    M,F
-  }
-  
+
   private final LocalDate birthDay;
   private final Gender gender;
   private final String firstName;
