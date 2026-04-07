@@ -28,7 +28,7 @@ public class Citizen {
 
   public Activity whatIsDoing(LocalDateTime now){
       if (profession!=null) {
-          if ( now.isIn( profession.getPeriod() ) ){
+          if ( now.isIn( profession.dailyPeriod() ) ){
               return Activity.STAYING;
           }
       }
