@@ -14,7 +14,7 @@ public class Citizen {
   private int salary;
   private LocalDate dieDay;
 
-  private Activity activity;
+  private Profession profession;
   
   public Citizen(LocalDate birthday, Gender gender, String firstName, String lastName, Citizen dad, Citizen mum){
     this.id = idGen.incrementAndGet();
@@ -24,6 +24,10 @@ public class Citizen {
     this.lastName = lastName;
     this.dad = dad;
     this.mum = mum;
+  }
+
+  public Activity whatIsDoing(LocalDateTime now){
+    
   }
 
   
