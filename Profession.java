@@ -1,5 +1,7 @@
-public enum Profession {
-  STUDENT,
-  WORKER,
-  RETIRED
+public record Profession(
+  LocalDate startDate,
+  Period dailyPeriod,
+  Location location
+){
+  
 }
